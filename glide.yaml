@@ -1,0 +1,4 @@
+package: .
+import:
+- package: github.com/golang/glog
+- package: github.com/smartystreets/go-aws-auth

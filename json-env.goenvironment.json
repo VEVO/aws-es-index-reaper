@@ -1,0 +1,6 @@
+{
+  "name": "json-env",
+  "pipelines": [
+    "aws-es-index-reaper"
+  ]
+}

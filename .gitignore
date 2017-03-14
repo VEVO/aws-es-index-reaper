@@ -1,0 +1,9 @@
+stringer_spec
+stringer_build
+vendor
+bin/glide
+.idea
+pkg
+src
+reaper
+aws-es-index-reaper
