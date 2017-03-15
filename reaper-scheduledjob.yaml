@@ -1,0 +1,30 @@
+apiVersion: batch/v2alpha1
+kind: ScheduledJob
+metadata:
+  annotations:
+  name: reaper-logstash
+  namespace: kube-system
+spec:
+  schedule: '@daily'
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+        spec:
+          containers:
+          - env:
+            - name: INDEX_PREFIX
+              value: logstash
+            - name: ES_URL
+              value: https://search-dev-us-east-1-services-log-xhxlxhxlxhxlxhxlkxhxlxhxlxhx.us-east-1.es.amazonaws.com
+            image: vevo/reaper:0.1.0-b14
+            name: reaper
+            volumeMounts:
+            - mountPath: /etc/ssl/certs/ca-certificates.crt
+              name: ssl-certs
+              readOnly: true
+          restartPolicy: OnFailure
+          volumes:
+          - hostPath:
+              path: /etc/ssl/certs/ca-certificates.crt
+            name: ssl-certs
