@@ -1153,6 +1153,10 @@ func TestSortIndexList(t *testing.T) {
 
 	sortedIndexes, err := indexReaper.sortIndexesByAge()
 
+	if err != nil {
+		t.Fatalf("Failed to sort indexes by age: %s", err)
+	}
+
 	if expectedCount != len(sortedIndexes) {
 		t.Fatalf("Expected index count of %d but got %d", expectedCount, len(sortedIndexes))
 	}
