@@ -123,6 +123,9 @@ func main() {
 	}
 
 	sortedIndexes, err := indexReaper.sortIndexesByAge()
+	if err != nil {
+		glog.Fatal(err)
+	}
 	if len(sortedIndexes) > maxCount {
 
 		for _, e := range sortedIndexes[:len(sortedIndexes)-maxCount] {
