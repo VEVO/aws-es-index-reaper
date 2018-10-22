@@ -1,0 +1,8 @@
+version: '2'
+services:
+  dockerlint:
+    image: redcoolbeans/dockerlint
+    command: -p
+    volumes:
+      - $DOCKERFILE:/Dockerfile:ro
+# vim: ft=yaml
