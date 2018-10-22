@@ -4,7 +4,7 @@ ARG BUILD_VERSION=0.0.1-test
 ENV CGO_ENABLED=0
 ENV GOOS=linux
 ENV GOARCH=amd64
-WORKDIR /go/src/github.com/VEVO/reaper
+WORKDIR /go/src/github.com/VEVO/aws-es-index-reaper
 RUN apk add --no-cache git build-base
 COPY . .
 RUN make go-build
