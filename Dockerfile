@@ -11,7 +11,7 @@ RUN make go-build
 
 # Getting a small image with only the binary
 FROM scratch
-COPY --from=base /go/src/github.com/VEVO/aws-es-index-reaper/reaper /reaper
+COPY --from=base /go/src/github.com/VEVO/aws-es-index-reaper/aws-es-index-reaper /reaper
 # This is needed when you do HTTPS requests
 COPY --from=base /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
 ENTRYPOINT ["/reaper"]
