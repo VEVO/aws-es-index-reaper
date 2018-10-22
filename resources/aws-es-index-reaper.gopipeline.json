@@ -42,7 +42,7 @@
             {
               "type": "exec",
               "command": "make",
-              "arguments": ["build_and_publish"],
+              "arguments": ["build"],
               "run_if": "passed"
             }
           ]
