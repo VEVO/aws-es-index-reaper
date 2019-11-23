@@ -1,8 +1,0 @@
-hash: 2bf7f09337d38c06a3c612233bba42cadd39430720126b63968d6a240ec9ab74
-updated: 2017-03-13T14:55:35.505424086-07:00
-imports:
-- name: github.com/golang/glog
-  version: 44145f04b68cf362d9c4df2182967c2275eaefed
-- name: github.com/smartystreets/go-aws-auth
-  version: 2043e6d0bb7e4c18464a7bba562acbe482e3cabd
-testImports: []
