@@ -1,5 +1,9 @@
 # aws-es-index-reaper
 
+[![GoDoc](https://godoc.org/github.com/VEVO/aws-es-index-reaper?status.svg)](https://godoc.org/github.com/VEVO/aws-es-index-reaper)
+[![Test Status](https://github.com/VEVO/aws-es-index-reaper/workflows/tests/badge.svg)](https://github.com/VEVO/aws-es-index-reaper/actions?query=workflow%3Atests)
+[![Go Report Card](https://goreportcard.com/badge/github.com/VEVO/aws-es-index-reaper)](https://goreportcard.com/report/github.com/VEVO/aws-es-index-reaper)
+
 Remove AWS ES indexes that exceed a configurable threshold.
 
 If you are using something like logstash or zipkin that makes daily indexes then `aws-es-index-reaper` can be used to keep the index count in check.
