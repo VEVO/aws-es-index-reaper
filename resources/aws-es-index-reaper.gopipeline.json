@@ -47,7 +47,8 @@
               ],
               "run_if": "passed"
             }
-          ]
+          ],
+          "elastic_profile_id": "elastic"
         }
       ]
     }
