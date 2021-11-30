@@ -8,18 +8,18 @@
   "tracking_tool": null,
   "label_template": "${COUNT}",
   "materials": [
-      {
-          "type": "git",
-          "shallow_clone": false,
-          "url": "git@github.com:VEVO/aws-es-index-reaper.git",
-          "auto_update": true,
-          "name": null,
-          "invert_filter": false,
-          "submodule_folder": null,
-          "destination": null,
-          "filter": null,
-          "branch": "master"
-      }
+    {
+      "type": "git",
+      "shallow_clone": false,
+      "url": "git@github.com:VEVO/aws-es-index-reaper.git",
+      "auto_update": true,
+      "name": null,
+      "invert_filter": false,
+      "submodule_folder": null,
+      "destination": null,
+      "filter": null,
+      "branch": "master"
+    }
   ],
   "stages": [
     {
@@ -30,7 +30,7 @@
       "environment_variables": [],
       "jobs": [
         {
-          "name" : "BuildAndPublish",
+          "name": "BuildAndPublish",
           "environment_variables": [],
           "tabs": [],
           "resources": [],
@@ -42,7 +42,9 @@
             {
               "type": "exec",
               "command": "make",
-              "arguments": ["build"],
+              "arguments": [
+                "build"
+              ],
               "run_if": "passed"
             }
           ]
